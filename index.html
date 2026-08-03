@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thailand Facility Explorer</title>
+</head>
+<body>
+    <header>
+        <h1>Thailand Facility Explorer</h1>
+        <p>A web application to explore schools and hospitals in Thailand.</p>
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#schools">Schools</a></li>
+                <li><a href="#hospitals">Hospitals</a></li>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#search">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>Thailand Facility Explorer is a web application that allows users to explore educational institutions and medical facilities across Thailand.</p>
+            <p>Users can view location details, facility summary statistics, and filter information by province and district.</p>
+            <img src="images/svgexport-1.svg" alt="Map of Thailand showing provincial boundaries">
+        </section>
+
+        <section id="schools">
+            <h2>Schools</h2>
+            <ul>
+                <li>
+                    Triam Udom Suksa School
+                    <ul>
+                        <li>Province: Bangkok</li>
+                        <li>District: Pathum Wan</li>
+                        <li>Type: High School</li>
+                    </ul>
+                </li>
+                <li>
+                    Debsirin School
+                    <ul>
+                        <li>Province: Bangkok</li>
+                        <li>District: Wat Thepsirintharawat</li>
+                        <li>Type: Secondary School, High School</li>
+                    </ul>
+                </li>
+                <li>
+                    Assumption College
+                    <ul>
+                        <li>Province: Bangkok</li>
+                        <li>District: Bang Rak</li>
+                        <li>Type: Primary School, Secondary School, High School</li>
+                    </ul>
+                </li>
+                <li>
+                    Suankularb Wittayalai School
+                    <ul>
+                        <li>Province: Bangkok</li>
+                        <li>District: Phra Nakhon</li>
+                        <li>Type: Secondary School, High School</li>
+                    </ul>
+                </li>
+                <li>
+                    Mahidol Wittayanusorn School
+                    <ul>
+                        <li>Province: Nakhon Pathom</li>
+                        <li>District: Phutthamonthon</li>
+                        <li>Type: Specialized High School</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="hospitals">
+            <h2>Hospitals</h2>
+            <dl>
+                <dt>King Chulalongkorn Memorial Hospital</dt>
+                <dd>
+                    King Chulalongkorn Memorial Hospital is a public general and tertiary referral hospital in Bangkok, Thailand.
+                    It is operated by the Thai Red Cross Society, and serves as the teaching hospital for the Faculty of Medicine, Chulalongkorn University and Srisavarindhira Thai Red Cross Institute of Nursing.
+                </dd>
+                <dt>Bangkok Hospital</dt>
+                <dd>
+                    Founded in 1972, Bangkok Hospital is the flagship of BDMS(Bangkok Dusit Medical Services) — Thailand's largest private hospital network with 58 hospitals and 8,400+ beds nationwide.
+                    The main hospital has 550 beds, 77 ICU beds, and serves over one million patients annually.
+                    It's been ranked among Thailand's best hospitals for three consecutive years by Newsweek.
+                </dd>
+                <dt>Bumrungrad International Hospital</dt>
+                <dd>
+                    Bumrungrad is the big name in Thai medical tourism.
+                    Southeast Asia's largest private hospital, it treats over 1.1 million patients annually — with more than 520,000 coming from 190+ countries.
+                    The hospital was the first in Asia to receive JCI accreditation in 2002 and has been named to Newsweek's World's Best Hospitals list for five consecutive years (ranked 100th globally in 2025).
+                </dd>
+                <dt>Samitivej Hospital</dt>
+                <dd>
+                    Samitivej is the go-to hospital for Bangkok's expat families. Founded in 1979 and also part of BDMS, it was the first hospital in Thailand to be certified as "mother-and-baby-friendly" by WHO and UNICEF.
+                    The Sukhumvit branch has 275 beds, 400+ specialists, and a dedicated international children's hospital — the only one in Thailand.
+                </dd>
+                <dt>BNH Hospital</dt>
+                <dd>
+                    BNH (Bangkok Nursing Home) is Thailand's oldest international private hospital, founded in 1898 by the British community.
+                    While the name sounds quaint, don't let it fool you — this is a modern, JCI-accredited facility with 120 beds and state-of-the-art diagnostic equipment.
+                    It's been serving the expat community for over 125 years.
+                </dd>
+            </dl>
+        </section>
+
+        <section id="summary">
+            <h2>Facility Summary</h2>
+            <table>
+                <caption>Facility Data Summary</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Facility Type</th>
+                        <th scope="col">Number of Facilities</th>
+                        <th scope="col">Province</th>
+                        <th scope="col">Location Accuracy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>School</td>
+                        <td>5</td>
+                        <td>Bangkok</td>
+                        <td>Exact coordinates</td>
+                    </tr>
+                    <tr>
+                        <td>Hospital</td>
+                        <td>3</td>
+                        <td>Bangkok</td>
+                        <td>Subdistrict only</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <details>
+                <summary>How accurate are the locations?</summary>
+                <p>
+                    School records contain precise latitude and longitude coordinates.
+                    Hospital records currently contain only subdistrict information.
+                </p>
+            </details>
+        </section>
+
+        <section id="search">
+            <h2>Search Form</h2>
+            <form>
+                <label for="search-input">Search Facility:</label>
+                <input type="text" id="search-input" name="query" placeholder="Enter school or hospital name...">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Tatsuhiro Noda, 68011542, Web Programming, 2026</p>
+    </footer>
+</body>
+</html>
