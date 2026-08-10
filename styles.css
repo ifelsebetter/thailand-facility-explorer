@@ -20,7 +20,6 @@ header {
 }
 
 header h1 {
-    margin: 0 0 10px 0;
     color: white;
 }
 
@@ -49,13 +48,25 @@ section {
     background-color: #ffffff;
 }
 
+#overview h2 {
+    color: blue;
+}
+
 #overview img {
     width: 500px;
     max-width: 100%;
 }
 
+#schools h2 {
+    color: green;
+}
+
 .school-list li {
     margin-bottom: 10px;
+}
+
+#hospitals h2 {
+    color: brown;
 }
 
 dt {
@@ -68,6 +79,13 @@ dd {
     margin-bottom: 15px;
 }
 
+#summary h2 {
+    color: orange;
+}
+
+#summary caption {
+    padding: 1%;
+}
 table {
     width: 100%;
     border-collapse: collapse;
@@ -83,6 +101,10 @@ td {
 th {
     background-color: #1f4e79;
     color: white;
+}
+
+#summary details {
+    padding: 2%;
 }
 
 footer {
