@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #1f4e79;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+header h1 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+}
+
+#overview h2 {
+    color: blue;
+}
+
+#overview img {
+    width: 500px;
+    max-width: 100%;
+}
+
+#schools h2 {
+    color: green;
+}
+
+.school-list li {
+    margin-bottom: 10px;
+}
+
+#hospitals h2 {
+    color: brown;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+
+#summary h2 {
+    color: orange;
+}
+
+#summary caption {
+    padding: 1%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #1f4e79;
+    color: white;
+}
+
+#summary details {
+    padding: 2%;
+}
+
+footer {
+    background-color: grey;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
